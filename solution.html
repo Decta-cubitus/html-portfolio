@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Angela's Portfolio</title>
+  <style>
+  #head{
+    background-color: purple;
+    opacity: 0.75;
+    text-align: center;
+    font-size: 3vw;
+  }
+  #head h1, h2{
+    color: cyan;
+  }
+  #box{
+    display: flex;
+    flex-direction: row;
+  }
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+  }
+  .cards article{
+    background-color: palevioletred;
+    padding: 20;
+    margin: 40px;
+    border-radius: 10px;
+    flex: 1 1 22%;
+  }
+  .cards article img{
+    width: 75%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+  }
+  .cards article h3{
+    text-align: center;
+  }
+  .cards article a{
+    font-size: 2vw;
+    padding-top: 10px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+  }
+  </style>
+</head>
+
+<body>
+  <section id="head">
+    <h1>Angela Yu's Portfolio</h1>
+    <h2>I'm a Web Developer</h2>
+  </section>
+<section id="box">
+  <section class="cards">
+    <article>
+      <h3 style="font-size: 2vw;"><a href="./public/birthday-invite.html" target="_blank">Birthday Invite Project</a></h3>
+      <img src="./assets/images/birthday-invite.png" alt="birthday invite project preview"/>
+    </article>
+  </section> 
+  <section class="cards">
+    <article>
+      <h3 style="font-size: 2vw;"><a href="./public/movie-ranking.html" target="_blank">Movie Ranking Project</a></h3>
+      <img src="./assets/images/movie-ranking.png"  alt="movie ranking project preview"/>
+      <br>
+      <a href="./public/about.html" target="_blank">About Me</a>
+      <br><br>
+      <a href="./public/contact.html" target="_blank">Contact Me</a>
+    </article>
+</body>
+
+</html>
